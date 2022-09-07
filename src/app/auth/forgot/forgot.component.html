@@ -1,0 +1,20 @@
+<div class="uk-flex uk-flex-middle uk-flex-center uk-height-viewport">
+    <!-- <mat-card class="uk-width-2-1@m uk-width-1-2@s"> -->
+    <mat-card class="uk-width-xlarge">
+      <div class="uk-flex uk-flex-center uk-margin-medium-bottom" >
+        <h2>Forgot password</h2>
+      </div>
+      <mat-card-content>
+        <mat-form-field class="uk-width-1-1">
+          <mat-label>Email</mat-label>
+          <input matInput type="text" value="" placeholder="Your Email">
+        </mat-form-field>
+        <div class="uk-margin-small-top uk-margin-small-bottom uk-flex uk-flex-between">
+          <button mat-raised-button color="primary" routerLink="/register">Submit</button>
+          <button mat-raised-button routerLink="/login">Login</button>
+        </div>
+        <!-- <button mat-flat-button>Forgot password</button> -->
+        <!-- <a [routerLink]="['/register']" [queryParams]="{debug: true}" fragment="education"> -->
+      </mat-card-content>
+    </mat-card>
+  </div>

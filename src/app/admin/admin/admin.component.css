@@ -1,0 +1,21 @@
+mat-sidenav{
+    min-width: 200px !important;
+    width: 85vw !important;
+    max-width: 350px !important;
+}
+mat-sidenav-content{
+    background-color: #ccc;
+    padding: 20pt;
+    min-height: 100vh;
+}
+.sidenav-left{
+    /* top: 56px; */
+}
+.example-header{
+    position: sticky;
+    position: -web-sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--primary);
+    color: whitesmoke;
+}

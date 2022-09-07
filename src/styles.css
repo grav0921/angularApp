@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "../css/uikit.css";
+:root {
+    --primary : #673ab7;
+}
+/* html, body { height: 100%; } */
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: whitesmoke; position: relative; z-index: -2;}
+
+    .uk-height-viewport{
+    
+    /* min-height: 600px; */
+    margin: -10pt 0;
+    height: auto;
+  }
+.uk-height-viewport{
+    position: relative;
+}
+.uk-height-viewport::before{
+    content:"";
+    background:var(--primary);
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}

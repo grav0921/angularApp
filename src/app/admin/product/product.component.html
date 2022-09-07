@@ -1,0 +1,39 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="uk-flex">
+            <span class="uk-width-expand"></span>
+            <button mat-flat-button color="primary" (click)="openDialog('s','w')">Tambah Data</button>
+        </div>
+        <table class="uk-table uk-table-middle uk-table-divider">
+            <thead>
+                <th>No</th>
+                <th>Judul</th>
+                <!-- <th>Genre</th> -->
+                <th>Penulis</th>
+                <th>Penerbit</th>
+                <th>ISBN</th>
+                <th>Harga</th>
+                <th style="text-align: right;">Aksi</th>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let buku of books; let nomor = index">
+                    <td>{{nomor+1}}</td>
+                    <td>{{buku.title}}</td>
+                    <td>{{buku.genre}}</td>
+                    <td>{{buku.author}}</td>
+                    <td>{{buku.publisher}}</td>
+                    <td>{{buku.isbn}}</td>
+                    <td>{{buku.price}}</td>
+                    <td align="right">
+                        <button mat-flat-button color="primary" class="uk-margin-small-right">Edit</button>
+                        <button mat-flat-button color="warn">Hapus</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card-content>
+</mat-card>
+
